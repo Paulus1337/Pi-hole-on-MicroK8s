@@ -44,12 +44,12 @@ Create a **StorageClass** or just enable the microk8s-hostpath storage using Por
 
 Create 2x Persistent Volumes Claims (PVC) these will be used to save all your Pi-hole settings.
 ```
-microk8s kubectl apply -f https://raw.githubusercontent.com/Paulus1337/Pi-hole-MicroK8s/main/dnsmasq-pvc.yaml
-microk8s kubectl apply -f https://raw.githubusercontent.com/Paulus1337/Pi-hole-MicroK8s/main/pihole-pvc.yaml
+microk8s kubectl apply -f https://raw.githubusercontent.com/Paulus1337/Pi-hole-on-MicroK8s/main/dnsmasq-pvc.yaml
+microk8s kubectl apply -f https://raw.githubusercontent.com/Paulus1337/Pi-hole-on-MicroK8s/main/pihole-pvc.yaml
 ```
 Now your ready to deploy Pi-hole. (Please note this installs in the **default** namespace)
 ```
-microk8s kubectl apply -f https://raw.githubusercontent.com/Paulus1337/Pi-hole-MicroK8s/main/pihole.yaml
+microk8s kubectl apply -f https://raw.githubusercontent.com/Paulus1337/Pi-hole-on-MicroK8s/main/pihole.yaml
 ```
 Voila Pi-hole is now accessable on port 8053: <http:// Device IP:8053>
 
